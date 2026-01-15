@@ -4,5 +4,9 @@
 **/dist/
 **/public/config.js
 **/public/config.ts
+**/public/*.js
+**/public/*.js.map
+nounsByWord/*.js
+nounsByWord/*.js.map
 npm-debug.log*
 yarn-error.log*
