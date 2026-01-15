@@ -1,0 +1,11 @@
+{
+  "name": "nouns-by-word",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}

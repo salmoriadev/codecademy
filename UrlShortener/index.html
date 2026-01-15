@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>URL shortener</title>
+        <link rel="stylesheet" type="text/css" href="public/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Unbounded:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <h1>Shorten, ship, share</h1>
+            <p class="tagline">
+                Paste a link, get a clean short URL. Simple, fast, no fuss.
+            </p>
+        </header>
+        <main id="main">
+            <div class="card">
+                <h2>Enter a URL</h2>
+                <form id="form" autocomplete="off">
+                    <input
+                        type="text"
+                        id="input"
+                        value=""
+                        placeholder="https://example.com/very/long/link"
+                    />
+                    <button id="shorten">Shorten</button>
+                </form>
+                <div id="responseField"></div>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <span>Powered by Rebrandly</span>
+        </footer>
+        <script defer src="public/config.js"></script>
+        <script type="module" src="public/main.js"></script>
+    </body>
+</html>

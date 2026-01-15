@@ -1,0 +1,12 @@
+{
+  "name": "message-cipher",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node message_mixer.ts",
+    "encode": "ts-node super_encoder.ts encode",
+    "decode": "ts-node super_encoder.ts decode",
+    "build": "tsc -p tsconfig.json",
+    "start": "node message_mixer.js"
+  }
+}

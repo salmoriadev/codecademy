@@ -1,0 +1,10 @@
+{
+  "name": "library",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node app.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node app.js"
+  }
+}

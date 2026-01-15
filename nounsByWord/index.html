@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Nouns by Word</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="background-glow"></div>
+        <header class="hero">
+            <div class="hero-inner">
+                <span class="badge">Word Lab</span>
+                <h1>Nouns by Word</h1>
+                <p>
+                    Feed an adjective, get a set of nouns that fit. Curious,
+                    specific, fast.
+                </p>
+            </div>
+        </header>
+
+        <main class="workspace">
+            <section class="panel">
+                <h2>Pick the mood</h2>
+                <p class="subtext">Try: "crisp", "urban", "gentle".</p>
+                <form id="nounForm" autocomplete="off">
+                    <label for="input">Adjective</label>
+                    <div class="input-row">
+                        <input
+                            type="text"
+                            id="input"
+                            placeholder="quiet"
+                            spellcheck="false"
+                        />
+                        <button id="submit" type="submit">Find nouns</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="results" id="responseField">
+                <h3>Suggestions</h3>
+                <p class="hint">Results will appear here.</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>Datamuse API for lexical suggestions.</span>
+        </footer>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
